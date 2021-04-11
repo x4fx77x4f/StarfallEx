@@ -266,7 +266,7 @@ end
 if CLIENT then
 
 	--- Called when local client changed instance permissions
-	-- @name permissionrequest
+	-- @name PermissionRequest
 	-- @class hook
 	-- @client
 

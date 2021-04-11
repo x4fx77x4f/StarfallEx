@@ -90,21 +90,21 @@ end
 
 --- Called when a button is pressed
 -- @client
--- @name inputPressed
+-- @name InputPressed
 -- @class hook
 -- @param number button Number of the button
 SF.hookAdd("PlayerButtonDown", "inputpressed", CheckButtonPerms)
 
 --- Called when a button is released
 -- @client
--- @name inputReleased
+-- @name InputReleased
 -- @class hook
 -- @param number button Number of the button
 SF.hookAdd("PlayerButtonUp", "inputreleased", CheckButtonPerms)
 
 --- Called when the mouse is moved
 -- @client
--- @name mousemoved
+-- @name MouseMoved
 -- @class hook
 -- @param number x X coordinate moved
 -- @param number y Y coordinate moved
@@ -121,7 +121,7 @@ end)
 
 --- Called when the mouse wheel is rotated
 -- @client
--- @name mouseWheeled
+-- @name MouseWheeled
 -- @class hook
 -- @param number delta Rotate delta
 SF.hookAdd("StartCommand", "mousewheeled", function(instance, ply, cmd)

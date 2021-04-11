@@ -18,7 +18,7 @@ if SERVER then
 	-- Server hooks
 
 	--- Called when an entity is being picked up by a gravity gun
-	-- @name GravGunOnPickedUp
+	-- @name GravgunOnPickedUp
 	-- @class hook
 	-- @server
 	-- @param Player ply Player picking up an object
@@ -26,7 +26,7 @@ if SERVER then
 	add("GravGunOnPickedUp")
 
 	--- Called when an entity is being dropped by a gravity gun
-	-- @name GravGunOnDropped
+	-- @name GravgunOnDropped
 	-- @class hook
 	-- @server
 	-- @param Player ply Player dropping the object
@@ -295,7 +295,7 @@ end
 add("PlayerHurt")
 
 --- Called when a player toggles noclip
--- @name PlayerNoClip
+-- @name PlayerNoclip
 -- @class hook
 -- @shared
 -- @param Player ply Player toggling noclip
@@ -319,7 +319,7 @@ add("KeyPress")
 add("KeyRelease")
 
 --- Called when a player punts with the gravity gun
--- @name GravGunPunt
+-- @name GravgunPunt
 -- @class hook
 -- @shared
 -- @param Player ply Player punting the gravgun
@@ -420,7 +420,7 @@ add("EndEntityDriving")
 add("StartEntityDriving")
 
 --- Tick hook. Called each game tick on both the server and client.
--- @name tick
+-- @name Tick
 -- @class hook
 -- @shared
 add("Tick")
@@ -561,7 +561,7 @@ end
 -- Hooks below are not simple gmod hooks and are called by other events in other files.
 
 --- Think hook. Called each frame on the client and each game tick on the server.
--- @name think
+-- @name Think
 -- @class hook
 -- @shared
 
@@ -603,22 +603,22 @@ end
 -- @param Entity ent The component entity
 
 --- Called when the player disconnects from a HUD component linked to the Starfall Chip
--- @name huddisconnected
+-- @name HUDDisconnected
 -- @class hook
 -- @shared
 
 --- Called when the player connects to a HUD component linked to the Starfall Chip
--- @name hudconnected
+-- @name HUDConnected
 -- @class hook
 -- @shared
 
 --- Called when a player uses the screen
--- @name starfallUsed
+-- @name StarfallUsed
 -- @class hook
 -- @param Player activator Player who used the screen or chip
 -- @param Entity used The screen or chip entity that was used
 
 --- Called when a frame is requested to be drawn on screen. (2D/3D Context)
--- @name render
+-- @name Render
 -- @class hook
 -- @client
