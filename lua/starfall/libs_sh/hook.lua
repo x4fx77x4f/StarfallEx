@@ -287,7 +287,7 @@ end
 --- Called when a player gets hurt
 -- @name PlayerHurt
 -- @class hook
--- @shared
+-- @server
 -- @param Player ply Player being hurt
 -- @param Entity attacker Entity causing damage to the player
 -- @param number newHealth New health of the player
@@ -605,12 +605,12 @@ end
 --- Called when the player disconnects from a HUD component linked to the Starfall Chip
 -- @name huddisconnected
 -- @class hook
--- @client
+-- @shared
 
 --- Called when the player connects to a HUD component linked to the Starfall Chip
 -- @name hudconnected
 -- @class hook
--- @client
+-- @shared
 
 --- Called when a player uses the screen
 -- @name starfallUsed
